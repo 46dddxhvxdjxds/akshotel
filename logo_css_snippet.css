@@ -1,0 +1,18 @@
+/* Responsive Logo Visibility */
+.logo-mobile {
+    display: none;
+}
+
+.logo-desktop {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .logo-mobile {
+        display: inline;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+}

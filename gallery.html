@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | AKS INTERNATIONAL HOTEL</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            position: relative;
+            background: transparent;
+            top: 0;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-split">
+            <!-- Left Pill: Logo -->
+            <div class="logo-pill">
+                <a href="index.html" class="logo">
+                    <span class="logo-mobile">AKS HOTEL</span>
+                    <span class="logo-desktop">AKS INTERNATIONAL HOTEL</span>
+                </a>
+            </div>
+
+            <!-- Right Pill: Nav + Contact + Login -->
+            <div class="nav-pill">
+                <a href="index.html">Home</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="booking.html">Book Now</a>
+                <span class="phone-item"> 9263803366</span>
+                <a href="admin.html" class="btn-login-outline">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="gallery section-padding">
+        <div class="container">
+            <h2 class="gallery-title text-center">OUR VISUAL STORY</h2>
+            <p class="gallery-subtitle text-center">
+                Discover the beauty of our campus, where every detail reflects comfort, style, and sophistication.
+                <span style="font-weight: 700;">AKS INTERNATIONAL HOTEL</span>.
+            </p>
+
+            <!-- Filter Tabs -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+                <button class="filter-btn" onclick="filterGallery('Room')">Room</button>
+                <button class="filter-btn" onclick="filterGallery('Facade')">Facade</button>
+                <button class="filter-btn" onclick="filterGallery('Washroom')">Washroom</button>
+                <button class="filter-btn" onclick="filterGallery('Swimming Pool')">Swimming Pool</button>
+                <button class="filter-btn" onclick="filterGallery('Restaurant')">Restaurant</button>
+                <button class="filter-btn" onclick="filterGallery('Banquet')">Banquet</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Room (7 images) -->
+                <div class="gallery-item category-room">
+                    <img src="https://lh3.googleusercontent.com/d/1yEyoCvlsLCYQeL55GBrP56C0lvp0m8Es" alt="Room View 1">
+                </div>
+                <div class="gallery-item category-room">
+                    <img src="https://lh3.googleusercontent.com/d/1m5WjJeCrNqn0FFZormOzYfnTf83FlHEA" alt="Room View 2">
+                </div>
+                <div class="gallery-item category-room">
+                    <img src="https://lh3.googleusercontent.com/d/15kL9VoJBBPKgpLOpbE-lGizyZUeNERAr" alt="Room View 3">
+                </div>
+                <div class="gallery-item category-room">
+                    <img src="https://lh3.googleusercontent.com/d/1CUSoQf__bj-omxYNS_GUWPAJQCmr26fs" alt="Room View 4">
+                </div>
+                <div class="gallery-item category-room">
+                    <img src="https://lh3.googleusercontent.com/d/1NYKrYNb7n34Rdsbsx-T9kELI74_fgEe4" alt="Room View 5">
+                </div>
+                <div class="gallery-item category-room">
+                    <img src="https://lh3.googleusercontent.com/d/11l2b-SVJxYxelz7xE8jDZvFMfsm5z3_n" alt="Room View 6">
+                </div>
+                <div class="gallery-item category-room">
+                    <img src="https://lh3.googleusercontent.com/d/1BDFhHLMisSTbMWbf_9AafGo_69YQgHvR" alt="Room View 7">
+                </div>
+
+                <!-- Facade (6 images) -->
+                <div class="gallery-item category-facade">
+                    <img src="https://lh3.googleusercontent.com/d/1CLu7IwaJ3fBh3ArbfMzaayOj_xhFialV"
+                        alt="Facade View 1">
+                </div>
+                <div class="gallery-item category-facade">
+                    <img src="https://lh3.googleusercontent.com/d/18BwvNYg2-_y6py0vqTvgILfnPUlKHaj-"
+                        alt="Facade View 2">
+                </div>
+                <div class="gallery-item category-facade">
+                    <img src="https://lh3.googleusercontent.com/d/1Rrec4nn0pq38k3_b2Ik7cLHemqDgypgP"
+                        alt="Facade View 3">
+                </div>
+                <div class="gallery-item category-facade">
+                    <img src="https://lh3.googleusercontent.com/d/1sVp9cxotx9Kbcn3DRWWyYnrzM7ZKDwYk"
+                        alt="Facade View 4">
+                </div>
+                <div class="gallery-item category-facade">
+                    <img src="https://lh3.googleusercontent.com/d/1gCMJdvagZmYFIENoC0I62V456u1ubJXT"
+                        alt="Facade View 5">
+                </div>
+                <div class="gallery-item category-facade">
+                    <img src="https://lh3.googleusercontent.com/d/1VS8JNtMWv6kzcCOusRdWLtc8c8kj3obD"
+                        alt="Facade View 6">
+                </div>
+
+                <!-- Washroom (2 images) -->
+                <div class="gallery-item category-washroom">
+                    <img src="https://lh3.googleusercontent.com/d/1IU2UJ4pf01pMAwbUrS4CK1XHBP4-Ulf7"
+                        alt="Washroom View 1">
+                </div>
+                <div class="gallery-item category-washroom">
+                    <img src="https://lh3.googleusercontent.com/d/1sOCwAqAzjWmsV6v7aNCG-vuZQuR7iLhk"
+                        alt="Washroom View 2">
+                </div>
+
+                <!-- Swimming Pool (3 images) -->
+                <div class="gallery-item category-swimming-pool">
+                    <img src="https://lh3.googleusercontent.com/d/1KzC0aTsLwRBGY83-3RBaPBH-YnqEAHMf"
+                        alt="Swimming Pool View 1">
+                </div>
+                <div class="gallery-item category-swimming-pool">
+                    <img src="https://lh3.googleusercontent.com/d/1-MCunqzYBnXPk8k1a-QXeF7ay_Rf2L64"
+                        alt="Swimming Pool View 2">
+                </div>
+                <div class="gallery-item category-swimming-pool">
+                    <img src="https://lh3.googleusercontent.com/d/1OzrN9qE3xwODs_ASx48F1oDS6M8uxORh"
+                        alt="Swimming Pool View 3">
+                </div>
+
+                <!-- Restaurant (8 images) -->
+                <div class="gallery-item category-restaurant">
+                    <img src="https://lh3.googleusercontent.com/d/1JvNfnm_8B1hFYaVaNA-QLbg5QhV4v3Ua"
+                        alt="Restaurant View 1">
+                </div>
+                <div class="gallery-item category-restaurant">
+                    <img src="https://lh3.googleusercontent.com/d/1tU9BtRvQHDKzVkINiEHQ7jCly7xnV4_f"
+                        alt="Restaurant View 2">
+                </div>
+                <div class="gallery-item category-restaurant">
+                    <img src="https://lh3.googleusercontent.com/d/1y2OGaqiCEgFjuujYXxzz7pavUrWr-T9V"
+                        alt="Restaurant View 3">
+                </div>
+                <div class="gallery-item category-restaurant">
+                    <img src="https://lh3.googleusercontent.com/d/1hP7XruyOF06jDeaLhXoRLpLFU5MPZ1yy"
+                        alt="Restaurant View 4">
+                </div>
+                <div class="gallery-item category-restaurant">
+                    <img src="https://lh3.googleusercontent.com/d/1jx6POwu2GD0g5PjpgS4rfGvx1VLG7o5d"
+                        alt="Restaurant View 5">
+                </div>
+                <div class="gallery-item category-restaurant">
+                    <img src="https://lh3.googleusercontent.com/d/1cXMq94jCgiWoDbHqX-8_GfT23P81yWK2"
+                        alt="Restaurant View 6">
+                </div>
+                <div class="gallery-item category-restaurant">
+                    <img src="https://lh3.googleusercontent.com/d/1seCMfhEO1B_6R1fkpaGnqmFH3_wjJSib"
+                        alt="Restaurant View 7">
+                </div>
+                <div class="gallery-item category-restaurant">
+                    <img src="https://lh3.googleusercontent.com/d/1Qcq3Yafd1Zryw_XwUbEHqU_UKJ0xCu9Z"
+                        alt="Restaurant View 8">
+                </div>
+
+                <!-- Banquet (3 images) -->
+                <div class="gallery-item category-banquet">
+                    <img src="https://lh3.googleusercontent.com/d/1CWsUSuYDE6cmKx-XdpzlDzLHyaoOqKlo"
+                        alt="Banquet View 1">
+                </div>
+                <div class="gallery-item category-banquet">
+                    <img src="https://lh3.googleusercontent.com/d/1dvtmLADwkGpN9mnCFKutq6HLEVJb22WO"
+                        alt="Banquet View 2">
+                </div>
+                <div class="gallery-item category-banquet">
+                    <img src="https://lh3.googleusercontent.com/d/1X0GoboVXpU-d8vUr_jZWM4LjDGlFXrRE"
+                        alt="Banquet View 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col">
+                    <h3 class="footer-logo">AKS INTERNATIONAL HOTEL</h3>
+                    <p>Where Comfort Meets Affordability AKS HOTEL provides modern comfort, friendly service, and great
+                        value for money.</p>
+                </div>
+
+                <!-- Column 2: Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="admin.html">Admin Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p> Lalganj, gaulaxni, Kuraich, Sasaram, Bihar 821115</p>
+                    <p> 9263803366</p>
+                    <p> akshotel@gmail.com</p>
+                    <p style="margin-top: 10px;">
+                        <a href="https://maps.app.goo.gl/ogAz5QDqWC5gkjPQ7" target="_blank"
+                            style="color: #fff; text-decoration: underline;">
+                            View on Google Maps
+                        </a>
+                    </p>
+                    <p style="margin-top: 10px;">
+                        <a href="https://www.instagram.com/diamond_palace.11?igsh=MWw3eGo1NGFjZmRkZA%3D%3D"
+                            target="_blank"
+                            style="color: #ccc; text-decoration: none; display: flex; align-items: center; gap: 5px;">
+                            <span style="font-size: 1.2rem;">📸</span> Follow on Instagram
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AKS INTERNATIONAL HOTEL. All rights reserved. | Build by zubayr barq</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Markup -->
+    <div id="galleryLightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImage" src="" alt="Full View">
+    </div>
+
+    <!-- Mobile Fixed Bottom Nav (Sliding) -->
+    <div id="mobileBottomNav" class="mobile-bottom-nav">
+        <div class="nav-slider-wrapper">
+            <!-- Slide 1: Branding -->
+            <div class="nav-slide nav-branding">
+                <a href="index.html" class="brand-text">AKS INTERNATIONAL HOTEL</a>
+            </div>
+            <!-- Slide 2: Links -->
+            <div class="nav-slide nav-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="booking.html">Book Now</a>
+                <a href="admin.html">Login</a>
+            </div>
+        </div>
+        <!-- Toggle Button (Fixed on Right) -->
+        <button id="mobileNavToggleBtn" class="nav-btn">&#9776;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
